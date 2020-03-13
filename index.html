@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Capturando Atividades do Usuário com JS</title>
+
+        <link href="resource/css/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Retaguarda</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Avaliação</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Duplicados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reprovados</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <main class="container-fluid">
+            <h2>Layout Teste Para Simulação de Captura de Atividades</h2>
+
+            <section class="scroll container container-background-cards">
+                <div class="card text-center card-space">
+                    <div class="card-header">
+                        Captura de movimento do mouse
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Foram capturados <span id="mouseMove">0</span> movimentos do mouse.</p>
+                    </div>
+                </div>
+                <div class="card text-center card-space">
+                    <div class="card-header">
+                        Captura do clique do mouse
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Foram capturados <span id="mouseClick">0</span> cliques do mouse</p>
+                        <a href="#" class="btn btn-primary">Teste aqui também</a>
+                    </div>
+                </div>
+                <div class="card text-center card-space">
+                    <div class="card-header">
+                        Captura rolagem da página
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Foram capturados <span id="mouseScroll">0</span> rolagens na página.</p>
+                    </div>
+                </div>
+                <div class="card text-center card-space">
+                    <div class="card-header">
+                        Captura digitação na página
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><3</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Teste Aqui" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <p class="card-text">Foram capturados <span id="keyPress">0</span> digitações na página.</p>
+                    </div>
+                </div>
+                <div class="card text-center card-space">
+                    <div class="card-header">
+                        Captura saída da aba da página
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Foram capturadas <span id="focusPage">0</span> saidas a página.</p>
+                    </div>
+                </div>
+                <div class="card text-center card-space">
+                    <div class="card-header">
+                        Captura entrada da aba da página
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Foram capturadas <span id="blurPage">0</span> entradas a página.</p>
+                    </div>
+                </div>
+                <div class="card text-center card-space">
+                    <div class="card-header">
+                        Captura tempo ocioso de 30 segundos
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="src/captureActivity.js"></script>
+    </body>
+</html>

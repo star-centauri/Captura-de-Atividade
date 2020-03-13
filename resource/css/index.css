@@ -1,0 +1,13 @@
+h2 {
+    text-align: center;
+}
+.scroll {
+    max-height: 600px;
+    overflow-y: auto;
+}
+.card-space {
+    margin: 15px;
+}
+.container-background-cards {
+    background-color: #ccc;
+}
